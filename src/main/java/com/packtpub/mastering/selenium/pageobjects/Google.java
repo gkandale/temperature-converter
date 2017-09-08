@@ -11,7 +11,6 @@ public class Google {
 
     public Google(WebDriver driver){
         this.driver = driver;
-        baseURL = "https://google.ca";
         driver.get(baseURL);
         System.out.println(driver.getTitle());
         if(!driver.getTitle().equals("Google")){
