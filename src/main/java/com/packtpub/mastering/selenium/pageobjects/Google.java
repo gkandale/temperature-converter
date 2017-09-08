@@ -24,7 +24,7 @@ public class Google {
         driver.findElement(By.id("lst-ib")).sendKeys("from fahrenheit to celsius");
         driver.findElement(By.name("btnK")).click();
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("results")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
         return new TemperatureConverterPage(driver);
     }
 }
